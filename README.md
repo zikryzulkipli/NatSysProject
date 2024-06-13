@@ -1,6 +1,6 @@
 # Net&Sys Assignment: Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: __EasyOS__. 
 
 Team Mates:
 1. __Muhammad Zikry bin Zulkipli (2219579)__
