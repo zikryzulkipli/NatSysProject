@@ -4,7 +4,7 @@ Group Name: __EasyOS__.
 
 Team Mates:
 1. __Muhammad Zikry bin Zulkipli (2219579)__
-2. __Mohamad Wafiq Bin MOhd Zainuddin (2215099)__
+2. __Mohamad Wafiq Bin Mohd Zainuddin (2215099)__
 3. __Fill name__ and __matric no__
 
 ## Rules
