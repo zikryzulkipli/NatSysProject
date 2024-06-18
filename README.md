@@ -5,7 +5,7 @@ Group Name: __EasyOS__.
 Team Mates:
 1. __Muhammad Zikry bin Zulkipli (2219579)__
 2. __Mohamad Wafiq Bin Mohd Zainuddin (2215099)__
-3. __Fill name__ and __matric no__
+3. __Iryan Syauqi Bin Azhar (2213601)__
 
 ## Rules
 1. You are allowed to have **3 group** members.
