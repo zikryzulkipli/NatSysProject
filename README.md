@@ -81,7 +81,9 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** 
-    __/workspaces/NatSysProject__.
+```bash
+/workspaces/NatSysProject
+```
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
 ```bash
 root:x:0:0:root:/root:/bin/bash
@@ -111,52 +113,182 @@ codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ```
 3. Run the command **df** . ***(1 mark)*** 
-    __Filesystem     1K-blocks     Used Available Use% Mounted on__
-    __overlay         32847680 10382352  20771228  34% /__
-    __tmpfs              65536        0     65536   0% /dev__
-    __shm                65536        0     65536   0% /dev/shm__
-    __/dev/root       30298176 24343028   5938764  81% /vscode__
-    __/dev/sda1      123266624      124 116958764   1% /tmp__
-    __/dev/loop3      32847680 10382352  20771228  34% /workspaces__
+```bash
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10382352  20771228  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        0     65536   0% /dev/shm
+/dev/root       30298176 24343028   5938764  81% /vscode
+/dev/sda1      123266624      124 116958764   1% /tmp
+/dev/loop3      32847680 10382352  20771228  34% /workspaces
+```
 4. Run the command **du** . ***(1 mark)*** 
-    __4       ./.git/branches__
-    __1972    ./images__
-    __4820    .__.
+```bash
+4       ./myroot/.local/share/nano
+8       ./myroot/.local/share
+12      ./myroot/.local
+24      ./myroot
+8       ./webpage
+4       ./.git/branches
+16      ./.git/objects/1b
+12      ./.git/objects/83
+8       ./.git/objects/47
+8       ./.git/objects/71
+12      ./.git/objects/62
+8       ./.git/objects/58
+36      ./.git/objects/73
+12      ./.git/objects/6f
+8       ./.git/objects/ce
+12      ./.git/objects/40
+8       ./.git/objects/a6
+12      ./.git/objects/04
+8       ./.git/objects/fd
+8       ./.git/objects/46
+8       ./.git/objects/1a
+8       ./.git/objects/59
+60      ./.git/objects/e5
+8       ./.git/objects/41
+8       ./.git/objects/7b
+12      ./.git/objects/09
+8       ./.git/objects/24
+8       ./.git/objects/c6
+12      ./.git/objects/3d
+8       ./.git/objects/0b
+12      ./.git/objects/72
+12      ./.git/objects/d2
+12      ./.git/objects/a1
+8       ./.git/objects/a8
+8       ./.git/objects/79
+12      ./.git/objects/15
+8       ./.git/objects/86
+8       ./.git/objects/5b
+12      ./.git/objects/1c
+20      ./.git/objects/7a
+8       ./.git/objects/55
+12      ./.git/objects/eb
+8       ./.git/objects/bf
+8       ./.git/objects/ab
+12      ./.git/objects/ff
+12      ./.git/objects/af
+8       ./.git/objects/74
+16      ./.git/objects/8f
+8       ./.git/objects/96
+8       ./.git/objects/ef
+8       ./.git/objects/05
+16      ./.git/objects/70
+16      ./.git/objects/d8
+8       ./.git/objects/1f
+8       ./.git/objects/b4
+8       ./.git/objects/91
+12      ./.git/objects/c3
+12      ./.git/objects/48
+12      ./.git/objects/da
+12      ./.git/objects/3a
+12      ./.git/objects/17
+8       ./.git/objects/ac
+12      ./.git/objects/2e
+8       ./.git/objects/0d
+8       ./.git/objects/b8
+8       ./.git/objects/16
+8       ./.git/objects/52
+8       ./.git/objects/fc
+12      ./.git/objects/6a
+8       ./.git/objects/e7
+24      ./.git/objects/fb
+8       ./.git/objects/fa
+8       ./.git/objects/4b
+8       ./.git/objects/a5
+8       ./.git/objects/f9
+12      ./.git/objects/42
+12      ./.git/objects/ea
+20      ./.git/objects/6e
+12      ./.git/objects/b5
+8       ./.git/objects/49
+8       ./.git/objects/f1
+8       ./.git/objects/60
+8       ./.git/objects/27
+8       ./.git/objects/4c
+12      ./.git/objects/85
+8       ./.git/objects/fe
+8       ./.git/objects/20
+8       ./.git/objects/d4
+8       ./.git/objects/f6
+8       ./.git/objects/3f
+12      ./.git/objects/a3
+24      ./.git/objects/cd
+8       ./.git/objects/f2
+8       ./.git/objects/b2
+8       ./.git/objects/93
+8       ./.git/objects/c7
+8       ./.git/objects/81
+12      ./.git/objects/22
+8       ./.git/objects/e9
+8       ./.git/objects/3e
+8       ./.git/objects/cb
+12      ./.git/objects/64
+48      ./.git/objects/b9
+8       ./.git/objects/b6
+8       ./.git/objects/4f
+8       ./.git/objects/4a
+4       ./.git/objects/info
+8       ./.git/objects/8a
+12      ./.git/objects/14
+8       ./.git/objects/c9
+1824    ./.git/objects/pack
+12      ./.git/objects/44
+2996    ./.git/objects
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+68      ./.git/hooks
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+4       ./.git/refs/tags
+8       ./.git/refs/heads
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+32      ./.git/refs
+8       ./.git/info
+3188    ./.git
+2096    ./images
+5340    .
+```
 5. Run the command **ls** . ***(1 mark)*** 
-    __README.md  images__.
+```bash
+README.md  images
+```
 6. Run the command **ls -asl** . ***(1 mark)*** 
-    __total 32__
-    __4 drwxrwxrwx+ 4 codespace root  4096 Jun 19 03:37 .__
-    __4 drwxr-xrwx+ 5 codespace root  4096 Jun 19 03:38 ..__
-    __4 drwxrwxrwx+ 9 codespace root  4096 Jun 19 03:51 .git__
-    __16 -rw-rw-rw-  1 codespace root 14628 Jun 19 05:53 README.md__
-    __4 drwxrwxrwx+ 2 codespace root  4096 Jun 19 03:37 images__.__
+    <img src="images/ls -asl.png" width="70%">
 7. Run the command **free -h** . ***(1 mark)*** 
-    __total        used        free      shared  buff/cache   available__
-    __Mem:           15Gi       1.4Gi       6.0Gi        65Mi       8.3Gi        13Gi__
-    __Swap:            0B          0B          0B__.
+    <img src="images/free -h.png" width="70%">
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
     <img src="images/cpuinfo1.png" width="70%">
     <img src="images/cpuinfo2.png" width="70%">
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
     <img src="images/top.png" width="70%">
 10. Run the command **uname -a**. ***(1 mark)*** 
-    __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+    - __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
 11. What is the available free memory in the system. ***(1 mark)*** 
-    __6033.4MB__.
+    - __6033.4MB__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-    __14111.3MB__.
+    - __14111.3MB__.
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-    __Ubuntu SMP 22.04.1__.
+    - __Ubuntu SMP 22.04.1__.
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
     - __ls: show directories/folders in the project.__
     - __ls -asl: show access for owners, private, and public to the directories__.
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-    __16__.
+    - __16 entries__.
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-    __CPU MHz:                            2595.122__.
+``` bash 
+CPU MHz:                            2595.122
+```
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-    __1057 codespa+  20   0   21.5g 334604  49920 S   1.0   2.0   0:43.74 node__.
+```bash
+1057 codespa+  20   0   21.5g 334604  49920 S   1.0   2.0   0:43.74 node
+```
 
 ## Running your own container instance.
 
@@ -216,7 +348,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Not persistent. The files lost when the container is removed or stopped.__
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+    - __Not persistent. The files lost when the container is removed or stopped.__
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes.__
 
 ## Running your own container with persistent storage
@@ -236,7 +369,10 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __-rw-rw-rw- 1 root root 25 Jun 19 13:21 helloworld.txt__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+```bash
+-rw-rw-rw- 1 root root 25 Jun 19 13:21 helloworld.txt
+```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
