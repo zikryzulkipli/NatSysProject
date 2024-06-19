@@ -241,7 +241,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Yes you can change it.__***
+*** __Yes you can change.__***
 ```bash
 -rw-rw-rw- 1 codespace codespace 25 Jun 19 13:21 helloworld.txt
 ```
