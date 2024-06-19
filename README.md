@@ -130,13 +130,13 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     __Mem:           15Gi       1.4Gi       6.0Gi        65Mi       8.3Gi        13Gi__
     __Swap:            0B          0B          0B__.
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
-    - <img src=".images/cpuinfo1.png" width="70%">
+    - <img src="images/cpuinfo1.png" width="70%">
     __.__
     __.__
     __.__
-    <img src=".images/cpuinfo2.png" width="70%">
+    <img src="images/cpuinfo2.png" width="70%">
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
-    - <img src=".images/top.png" width="70%">
+    - <img src="images/top.png" width="70%">
 10. Run the command **uname -a**. ***(1 mark)*** 
     - __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
 11. What is the available free memory in the system. ***(1 mark)*** 
