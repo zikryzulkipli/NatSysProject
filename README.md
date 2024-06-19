@@ -281,30 +281,53 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ```bash
 ## STEP 1:
 ## Create Networks ##
-docker network create bluenet
-docker network create rednet`
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker network create bluenet
+e292bf1aa7188b11ed290b4f7b43492639c704092bca91ef0720f7e3a061f031
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker network create rednet
+ded73fff84dd60ea16d18901429fa314cb0b5f1fc6d83be370c20fe48f43dce7
 
 ## STEP 2: (automatically running)
 ## Create (1) Container in background called "c1" running busybox image ##
-docker run -itd --net bluenet --name c1 busybox sh
-docker run -itd --net rednet --name c2 busybox sh
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker run -itd --net bluenet --name c1 busybox sh
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+ec562eabd705: Pull complete 
+Digest: sha256:9ae97d36d26566ff84e8893c64a6dc4fe8ca6d1144bf5b87b2b85a32def253c7
+Status: Downloaded newer image for busybox:latest
+eb4dd056614739e119f378b92229b2c55d08cded6ddd065b31345aad4d82078d
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker run -itd --net rednet --name c2 busybox sh
+2e29cae13df237a1c0c386835e537db91730ce8ca98ca807e7c6e086decc976f
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** BusyBox: BusyBox is a software suite that provides several Unix utilities in a single executable file. It is often used in embedded systems and Docker containers because it offers a lightweight set of tools that are efficient and functional. --name switch: The --name switch in Docker is used to assign a name to a container. This makes it easier to reference the container by name rather than by its container ID, simplifying management and identification of the container
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+![image](https://github.com/zikryzulkipli/NatSysProject/assets/170236719/52f1cefd-08e5-4ad4-95bd-5d3ce5f8473b)
+
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
-4. What is the network address for the running container c1 and c2.
-5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+   Gateway bluenet :172.18.0.1
+   Gateway rednet : 172.19.0.1
+5. What is the network address for the running container c1 and c2.
+   Ip address c1 :172.18.0.2
+   Ip address c2 :172.19.0.2
+7. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+![image](https://github.com/zikryzulkipli/NatSysProject/assets/170236719/1645f30b-01e1-42a1-9ea1-563ddd56cef6)
+No , Since c1 and c2 are on different networks (bluenet and rednet respectively), they cannot communicate directly with each other. Therefore, the ping command fails with a "bad address" error.
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
 ```
-docker network create bridgenet
-docker network connect bridgenet c1
-docker network connect bridgenet c2
-docker exec c1 ping c2
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker network create bridgenet
+f720d32a9f27c2817ebbe5ee6005f48a0426af7bb43a2903ef6f1627e1c71d04
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker network connect bridgenet c1
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker network connect bridgenet c2
+@wapekkkkk ➜ /workspaces/NatSysProject (main) $ docker exec c1 ping c2
 ```
+![image](https://github.com/zikryzulkipli/NatSysProject/assets/170236719/06533642-27fb-4792-b915-a4547d551ccf)
+Yes . I am able to ping c2 from c1 successfully.
+Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
+
+Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
 
 ## What to submit
 
