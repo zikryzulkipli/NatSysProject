@@ -214,8 +214,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __Not persistent. The files lost when the container is removed or stopped.__
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes.__
 
 ## Running your own container with persistent storage
 
@@ -234,14 +234,17 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __-rw-rw-rw- 1 root root 25 Jun 19 13:21 helloworld.txt__.
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** __Yes you can change it.__***
+```bash
+-rw-rw-rw- 1 codespace codespace 25 Jun 19 13:21 helloworld.txt
+```
 
 ## You are on your own, create your own static webpage
 
