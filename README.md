@@ -387,13 +387,18 @@ sudo chown -R codespace:codespace myroot
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
-2. Inside the directory, create a page index.html, with any content you would like
-3. Then, run the apache webserver and mount the webpage directory to it. Hint:
 ```bash
-## the -p 8080:80 flag points the host port 8080 to the container port 80
-
-docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ -p 8080:80 httpd
+@iryanazhar ➜ /workspaces/NatSysProject (main) $ mkdir webpage
+@iryanazhar ➜ /workspaces/NatSysProject (main) $ cd webpage
 ```
+2.Inside the directory, create a page index.html, with any content you would like
+```bash
+@iryanazhar ➜ /workspaces/NatSysProject/webpage (main) $ touch index.html
+@iryanazhar ➜ /workspaces/NatSysProject/webpage (main) $ nano index.html
+```
+3. Then, run the apache webserver and mount the webpage directory to it. Hint:
+![image](https://github.com/zikryzulkipli/NatSysProject/assets/170236719/28ed63cd-47b8-445c-8102-697e2b6c808a)
+
 
 4. If it works, codespace will trigger a port assignment and provide a URL for you to access your webpage like the one below.
 
@@ -408,9 +413,15 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)***
-3. What port is open for http protocol on the host machine? ***(1 mark)***
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+Permissions of Folder /usr/local/apache2/htdocs:
+
+Permissions: drwxr-xr-x
+
+User and Group: User: root Group: root.
+
+2. What port is the apache web server running. ***(1 mark)*** 80
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 8080
 
 ## Create SUB Networks
 
