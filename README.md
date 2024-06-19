@@ -22,9 +22,10 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __https://github.com/zikryzulkipli/NatSysProject.git__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** 
+    - __https://github.com/zikryzulkipli/NatSysProject.git__.
 2. How many files and folders are in this repository. ***(1 mark)*** 
-__2. images, and README.md__.
+    - __2. images, and README.md__.
 
 
 ## Exploring github codespaces
@@ -56,12 +57,13 @@ __2. images, and README.md__.
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Glorious Zebra__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+    - __Glorious Zebra__.
 2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
     1. __2-core with 8GB RAM, and 32GB storage__.
     2. __4-core with 16GB RAM, and 32GB storage__.
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
-__Committing our work is to publish our work to the team while syncing is to ensure we get the latest commit by the team__.
+    - __Committing our work is to publish our work to the team while syncing is to ensure we get the latest commit by the team__.
 
 ## Exploring the Terminal
 
@@ -78,23 +80,80 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** 
+    - __/workspaces/NatSysProject__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+3. Run the command **df** . ***(1 mark)*** 
+    - __root:x:0:0:root:/root:/bin/bash__
+    __daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin__
+    __bin:x:2:2:bin:/bin:/usr/sbin/nologin__
+    __sys:x:3:3:sys:/dev:/usr/sbin/nologin__
+    __sync:x:4:65534:sync:/bin:/bin/sync__
+    __games:x:5:60:games:/usr/games:/usr/sbin/nologin__
+    __man:x:6:12:man:/var/cache/man:/usr/sbin/nologin__
+    __lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin__
+    __mail:x:8:8:mail:/var/mail:/usr/sbin/nologin__
+    __news:x:9:9:news:/var/spool/news:/usr/sbin/nologin__
+    __uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin__
+    __proxy:x:13:13:proxy:/bin:/usr/sbin/nologin__
+    __www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin__
+    __backup:x:34:34:backup:/var/backups:/usr/sbin/nologin__
+    __list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin__
+    __irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin__
+    __gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin__
+    __nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin__
+    __apt:x:100:65534::/nonexistent:/usr/sbin/nologin__
+    __systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin__
+    __systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin__
+    __systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin__
+    __messagebus:x:104:105::/nonexistent:/usr/sbin/nologin__
+    __codespace:x:1000:1000::/home/codespace:/bin/bash__
+    __sshd:x:105:65534::/run/sshd:/usr/sbin/nologin__.
+4. Run the command **du** . ***(1 mark)*** 
+    - __4       ./.git/branches__
+    __.__
+    __.__
+    __.__
+    __1972    ./images__
+    __4820    .__.
+5. Run the command **ls** . ***(1 mark)*** 
+    - __README.md  images__.
+6. Run the command **ls -asl** . ***(1 mark)*** 
+    - __total 32__
+    __4 drwxrwxrwx+ 4 codespace root  4096 Jun 19 03:37 .__
+    __4 drwxr-xrwx+ 5 codespace root  4096 Jun 19 03:38 ..__
+    __4 drwxrwxrwx+ 9 codespace root  4096 Jun 19 03:51 .git__
+    __16 -rw-rw-rw-  1 codespace root 14628 Jun 19 05:53 README.md__
+    __4 drwxrwxrwx+ 2 codespace root  4096 Jun 19 03:37 images__.__
+7. Run the command **free -h** . ***(1 mark)*** 
+    - __total        used        free      shared  buff/cache   available__
+    __Mem:           15Gi       1.4Gi       6.0Gi        65Mi       8.3Gi        13Gi__
+    __Swap:            0B          0B          0B__.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+    - <img src=".images/cpuinfo1.png" width="70%">
+    __.__
+    __.__
+    __.__
+    <img src=".images/cpuinfo2.png" width="70%">
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+    - <img src=".images/top.png" width="70%">
+10. Run the command **uname -a**. ***(1 mark)*** 
+    - __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+11. What is the available free memory in the system. ***(1 mark)*** 
+    - __6033.4MB__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+    - __14111.3MB__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+    - __Ubuntu SMP 22.04.1__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+    - __ls: show directories/folders in the project.__
+    - __ls -asl: show access for owners, private, and public to the directories__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+    - __16__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+    - __CPU MHz:                            2595.122__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+    - __1057 codespa+  20   0   21.5g 334604  49920 S   1.0   2.0   0:43.74 node__.
 
 ## Running your own container instance.
 
