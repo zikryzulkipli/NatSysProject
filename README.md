@@ -81,10 +81,9 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** 
-    - __/workspaces/NatSysProject__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** 
-    - __root:x:0:0:root:/root:/bin/bash__
+    __/workspaces/NatSysProject__.
+2. Run the command **cat /etc/passwd** . ***(1 mark)***
+    __root:x:0:0:root:/root:/bin/bash__
     __daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin__
     __bin:x:2:2:bin:/bin:/usr/sbin/nologin__
     __sys:x:3:3:sys:/dev:/usr/sbin/nologin__
@@ -109,51 +108,53 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     __messagebus:x:104:105::/nonexistent:/usr/sbin/nologin__
     __codespace:x:1000:1000::/home/codespace:/bin/bash__
     __sshd:x:105:65534::/run/sshd:/usr/sbin/nologin__.
+3. Run the command **df** . ***(1 mark)*** 
+    __Filesystem     1K-blocks     Used Available Use% Mounted on__
+    __overlay         32847680 10382352  20771228  34% /__
+    __tmpfs              65536        0     65536   0% /dev__
+    __shm                65536        0     65536   0% /dev/shm__
+    __/dev/root       30298176 24343028   5938764  81% /vscode__
+    __/dev/sda1      123266624      124 116958764   1% /tmp__
+    __/dev/loop3      32847680 10382352  20771228  34% /workspaces__
 4. Run the command **du** . ***(1 mark)*** 
-    - __4       ./.git/branches__
-    __.__
-    __.__
-    __.__
+    __4       ./.git/branches__
     __1972    ./images__
     __4820    .__.
 5. Run the command **ls** . ***(1 mark)*** 
-    - __README.md  images__.
+    __README.md  images__.
 6. Run the command **ls -asl** . ***(1 mark)*** 
-    - __total 32__
+    __total 32__
     __4 drwxrwxrwx+ 4 codespace root  4096 Jun 19 03:37 .__
     __4 drwxr-xrwx+ 5 codespace root  4096 Jun 19 03:38 ..__
     __4 drwxrwxrwx+ 9 codespace root  4096 Jun 19 03:51 .git__
     __16 -rw-rw-rw-  1 codespace root 14628 Jun 19 05:53 README.md__
     __4 drwxrwxrwx+ 2 codespace root  4096 Jun 19 03:37 images__.__
 7. Run the command **free -h** . ***(1 mark)*** 
-    - __total        used        free      shared  buff/cache   available__
+    __total        used        free      shared  buff/cache   available__
     __Mem:           15Gi       1.4Gi       6.0Gi        65Mi       8.3Gi        13Gi__
     __Swap:            0B          0B          0B__.
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
-    - <img src="images/cpuinfo1.png" width="70%">
-    __.__
-    __.__
-    __.__
+    <img src="images/cpuinfo1.png" width="70%">
     <img src="images/cpuinfo2.png" width="70%">
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
-    - <img src="images/top.png" width="70%">
+    <img src="images/top.png" width="70%">
 10. Run the command **uname -a**. ***(1 mark)*** 
-    - __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+    __Linux codespaces-e5db00 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
 11. What is the available free memory in the system. ***(1 mark)*** 
-    - __6033.4MB__.
+    __6033.4MB__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-    - __14111.3MB__.
+    __14111.3MB__.
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-    - __Ubuntu SMP 22.04.1__.
+    __Ubuntu SMP 22.04.1__.
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
     - __ls: show directories/folders in the project.__
     - __ls -asl: show access for owners, private, and public to the directories__.
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-    - __16__.
+    __16__.
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
-    - __CPU MHz:                            2595.122__.
+    __CPU MHz:                            2595.122__.
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-    - __1057 codespa+  20   0   21.5g 334604  49920 S   1.0   2.0   0:43.74 node__.
+    __1057 codespa+  20   0   21.5g 334604  49920 S   1.0   2.0   0:43.74 node__.
 
 ## Running your own container instance.
 
