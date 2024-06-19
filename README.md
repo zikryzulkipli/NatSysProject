@@ -83,31 +83,33 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 1. Run the command **pwd** . ***(1 mark)*** 
     __/workspaces/NatSysProject__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
-    __root:x:0:0:root:/root:/bin/bash__
-    __daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin__
-    __bin:x:2:2:bin:/bin:/usr/sbin/nologin__
-    __sys:x:3:3:sys:/dev:/usr/sbin/nologin__
-    __sync:x:4:65534:sync:/bin:/bin/sync__
-    __games:x:5:60:games:/usr/games:/usr/sbin/nologin__
-    __man:x:6:12:man:/var/cache/man:/usr/sbin/nologin__
-    __lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin__
-    __mail:x:8:8:mail:/var/mail:/usr/sbin/nologin__
-    __news:x:9:9:news:/var/spool/news:/usr/sbin/nologin__
-    __uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin__
-    __proxy:x:13:13:proxy:/bin:/usr/sbin/nologin__
-    __www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin__
-    __backup:x:34:34:backup:/var/backups:/usr/sbin/nologin__
-    __list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin__
-    __irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin__
-    __gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin__
-    __nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin__
-    __apt:x:100:65534::/nonexistent:/usr/sbin/nologin__
-    __systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin__
-    __systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin__
-    __systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin__
-    __messagebus:x:104:105::/nonexistent:/usr/sbin/nologin__
-    __codespace:x:1000:1000::/home/codespace:/bin/bash__
-    __sshd:x:105:65534::/run/sshd:/usr/sbin/nologin__.
+```bash
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
 3. Run the command **df** . ***(1 mark)*** 
     __Filesystem     1K-blocks     Used Available Use% Mounted on__
     __overlay         32847680 10382352  20771228  34% /__
